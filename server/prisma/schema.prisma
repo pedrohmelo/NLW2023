@@ -1,0 +1,19 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Habit {
+  id String @id @default(uuid()) //quando o hábito for criado do BD, ele vai preencher o id automaticamente com um UUID (identificador único universal)
+  title String
+  created_at DateTime
+
+  @@map("habits") //nome que vai criar o nome da tabela
+}

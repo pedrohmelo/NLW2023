@@ -1,0 +1,15 @@
+
+//backend
+
+npm run dev -> rodar o servidor, lembrando que o dev está salvo no package.json, é apenas um atalho para simplificar o comando
+npx prisma migrate dev -> lê o arquivo schema.prisma e percebe as alterações feitas nele para jogar no bd
+npx prisma studio -> abre no navegador uma interface para navegar pelo banco de dados
+npm i @fastify/cors -> sem configurar o cors, nenhuma aplicação conseguirá buscar dados do backend. Ou seja, ele configura quais aplicações acessarão os dados do backend.
+
+
+//frontend
+
+npm create vite@latest -> criando o projeto web com vite
+npm install -> instalando as dependências do package.json
+npm run dev -> ele nos da o endereço do localhost para abrirmos a aplicação criada
+npm install -D tailwindcss postcss autoprefixer
