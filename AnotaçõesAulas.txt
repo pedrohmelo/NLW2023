@@ -7,9 +7,10 @@ npx prisma studio -> abre no navegador uma interface para navegar pelo banco de 
 npm i @fastify/cors -> sem configurar o cors, nenhuma aplicação conseguirá buscar dados do backend. Ou seja, ele configura quais aplicações acessarão os dados do backend.
 
 
-//frontend
+//frontend - web
 
 npm create vite@latest -> criando o projeto web com vite
 npm install -> instalando as dependências do package.json
 npm run dev -> ele nos da o endereço do localhost para abrirmos a aplicação criada
 npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p -> o -p é para instalar um arquivo postcss.config
